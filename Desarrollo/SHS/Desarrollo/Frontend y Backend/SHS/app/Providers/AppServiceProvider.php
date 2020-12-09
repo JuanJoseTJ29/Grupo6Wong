@@ -24,9 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //Ola :) esta es una prueba de la primera parte de la codificacion de Service Home Store :)
-        // Juanjo nuestro lider ;P
-        
+        //
+
         Schema::defaultStringLength(191);
     }
 }
