@@ -69,7 +69,21 @@ class ServiciosController extends Controller
      */
     public function update(Request $request, Servicios $servicios)
     {
-        //
+        $datosServicio=request()->except(['_token','_method']);
+
+        if($request->hasFile('foto')){
+            $servicio= Servicios::findOrFail($id);
+            Storage::delete('public/'.$servicio->foto);
+
+            $datosServicio['foto']=$request->file('foto')->store('uploads','public');
+    }
+
+
+
+        Servicios::where('id','=',$id)->update($datosServicio);
+        // $servicio= Servicios::findOrFail($id); // recepciona la informacion que nos envian a travez de la url y busca a todos los empleado o empleados que tengan ese id ($Nombre)
+        //return view ('servicios.edit', compact('servicio'));
+        return redirect('servicios')->with('Mensaje','Servicio modificado');
     }
 
     /**
