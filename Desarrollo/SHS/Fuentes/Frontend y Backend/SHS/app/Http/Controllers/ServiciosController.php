@@ -36,14 +36,24 @@ class ServiciosController extends Controller
     public function store(Request $request)
     {
         //
-    }
+        //$datosServicio=request()->all();
 
+        $datosServicio=request()->except('_token');
+       
+        if($request->hasFile('foto')){
+            $datosServicio['foto']=$request->file('foto')->store('uploads','public');
+    }
+    Servicios::insert( $datosServicio);
+    //return response()->json($datosServicio);
+    return redirect('servicios')->with('Mensaje','Servicio agregado con exito');
+     }
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\Servicios  $servicios
      * @return \Illuminate\Http\Response
      */
+
     public function show(Servicios $servicios)
     {
         //
