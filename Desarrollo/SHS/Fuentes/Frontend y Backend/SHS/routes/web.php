@@ -25,4 +25,3 @@ Route::get('/servicios/create','\App\Http\Controllers\ServiciosController@create
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
