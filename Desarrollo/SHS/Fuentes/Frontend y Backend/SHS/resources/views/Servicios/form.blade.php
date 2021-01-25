@@ -1,4 +1,4 @@
-<div class="form-group">
+<<div class="form-group">
 
 <label for="Nombre" class="control-label">{{'Nombre'}}</label>
 
