@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'Registrando informacion')
+@section('title', 'Cambio de informacion')
 
 @section('content_header')
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Crear Servicio</h1>
+                    <h1>Editar Servicio</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -15,7 +15,7 @@
                             <a href="{{ route('service.index') }}">Servicio</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            Crear Servicio
+                            Editar Servicio
                         </li>
                     </ol>
                 </div>
@@ -25,15 +25,6 @@
 @stop
 
 @section('content')
-<div class="container">
-    @if(Session::has('Message'))
-    <div class="alert alert-success" role="alert">
-        {{Session::get('Message')}}
-    </div>
-    @endif
-</div>
-
-
 <section class="content">
 </section>
 <div class="container-fluid">
@@ -43,14 +34,15 @@
                 <div class="card-header">
                     <h3 class="card-title">Ficha del Servicio</h3>
                 </div>
-                <form action="{{ route('service.store') }}" role="form" method="post" enctype="multipart/form-data">
+                <form action="{{ route('service.update', $service) }}" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
+                    {{method_field('PATCH')}}
                     <div class="card-body">
                         @include('services.form')
                     </div>
                     <div class="card-footer">
                         <div class="row justify-content-between">
-                            <input type="submit" class="btn btn-primary" value="Agregar">
+                            <input type="submit" class="btn btn-primary" value="Modificar">
 
                             <a class="btn btn-outline-secondary" href="{{route('service.index')}}">Regresar</a>
                         </div>
@@ -61,3 +53,8 @@
     </div>
 </div>
 @stop
+
+
+
+
+
