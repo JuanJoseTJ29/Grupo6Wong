@@ -22,7 +22,7 @@ _Este proyecto nace con la idea de facilitar a los usuarios el acceso e informac
 * [Quinteros Peralta, Rodrigo Ervin](https://github.com/QPRodrigo) **(Full Stack)**
 * [Rojas Miñan, Alexis Luis Clemente](https://github.com/AlexisRM0511) **(Testing e Integrante del Equipo de Backend)**
 * [Maita Medina, Andrés](https://github.com/AndresMaitaMedina) **(Analista e Integrante del Equipo de Frontend)**
-* [Harold Giusseppi Alberto Ramos](https://github.com/18200306) **(Integrante del Equipo de Frontend)**
+* [Harold Giusseppi, Alberto Ramos](https://github.com/18200306) **(Integrante del Equipo de Frontend)**
 
 
 ## Herramientas 🛠️
