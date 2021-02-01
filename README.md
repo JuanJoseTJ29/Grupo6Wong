@@ -1,6 +1,9 @@
 # Repositorio - Grupo 6 
 _En este repositorio se adjuntará toda la documentación del proyecto asi como tambien las lineas bases y la codificacion respectiva del proyecto._
 
+
+
+
 ## Tabla de contenidos:
 - [Descripción](#service-home-store-)
 - [Autores](#autores-%EF%B8%8F)
