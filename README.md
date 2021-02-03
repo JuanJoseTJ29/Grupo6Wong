@@ -33,8 +33,11 @@ _Se utilizaron las siguientes herramientas para crear ServiceHomeStore_
 * [Laragon](https://laragon.org/) - Se utilizo Laragon para el entorno de desarrollo
 
 ## Despliegue 📦
-_Para el Despliegue se utilizo [Heroku](https://www.heroku.com/), que es una plataforma de servicio de computación en la Nube que soporta distintos lenguajes de programación._
+_Para el Despliegue se utilizo [Heroku](https://www.heroku.com/), que es una plataforma de servicio de computación en la Nube que soporta distintos lenguajes de programación. Heroku soporta lenguajes como Node.js, rubí, Java, Php, Python, Ir, Scala, Clojure._
 <p align="center"><img height="100" src="https://estebanromero.com/wp-content/uploads/2018/02/heroku1.png"/></p> 
 
-Heroku soporta lenguajes como Node.js, rubí, Java, Php, Python, Ir, Scala, Clojure.
+_Tambien se apoyo en la plataforma de nube que brinda Amazon, [Amazon Web Service](https://aws.amazon.com/es/), que es una colección de servicios de computación en la nube pública  ofrecidas a través de Internet por Amazon.com. Es usado en aplicaciones populares como Dropbox, Foursquare, HootSuite._
+<p align="center"><img height="100" src="https://www.sccenlared.es/wp-content/uploads/2017/09/1200px-AmazonWebservices_Logo_svg.png"/></p> 
+
+_AWS ofrece herramientas para el Análisis, Integracion de Aplicaciones, Administracion de Costos , Blockhain y para las Aplicaciones Empresariales._
 
